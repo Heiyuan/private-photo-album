@@ -1,0 +1,6 @@
+framework module Pods_PrivatePhotoAlbumTests {
+  umbrella header "Pods-PrivatePhotoAlbumTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

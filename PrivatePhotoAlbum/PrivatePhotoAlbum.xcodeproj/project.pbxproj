@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5196FAC1B45D8322562ED5D0 /* Pods_PrivatePhotoAlbumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8147ED9C583225A6A74582D1 /* Pods_PrivatePhotoAlbumTests.framework */; };
+		895B664B0AB7CD367E3103AD /* Pods_PrivatePhotoAlbumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAB0F602758AF9F8C303174 /* Pods_PrivatePhotoAlbumUITests.framework */; };
 		923B534C1D12BCEA00AF17BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B534B1D12BCEA00AF17BE /* AppDelegate.swift */; };
 		923B534E1D12BCEA00AF17BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B534D1D12BCEA00AF17BE /* ViewController.swift */; };
 		923B53511D12BCEA00AF17BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923B534F1D12BCEA00AF17BE /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		923B53561D12BCEA00AF17BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923B53541D12BCEA00AF17BE /* LaunchScreen.storyboard */; };
 		923B53611D12BCEA00AF17BE /* PrivatePhotoAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B53601D12BCEA00AF17BE /* PrivatePhotoAlbumTests.swift */; };
 		923B536C1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B536B1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift */; };
+		A0BD2DBBDE592E38D92CA5ED /* Pods_PrivatePhotoAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B8403C3FE68DF70E65AFEF /* Pods_PrivatePhotoAlbum.framework */; };
 		B14C89871D1E5B58009BA3EB /* EncryptionWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */; };
 		B16B835F1D1E74B10016CF4B /* EncryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01D2ECC85A5FDFC13A117438 /* Pods-PrivatePhotoAlbumUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivatePhotoAlbumUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrivatePhotoAlbumUITests/Pods-PrivatePhotoAlbumUITests.release.xcconfig"; sourceTree = "<group>"; };
+		045086D0BBF6F116A2FAA138 /* Pods-PrivatePhotoAlbumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivatePhotoAlbumTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrivatePhotoAlbumTests/Pods-PrivatePhotoAlbumTests.release.xcconfig"; sourceTree = "<group>"; };
+		335D3A894331B79F5C488FB9 /* Pods-PrivatePhotoAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivatePhotoAlbum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrivatePhotoAlbum/Pods-PrivatePhotoAlbum.debug.xcconfig"; sourceTree = "<group>"; };
+		505B4C746D0F8DEE9A62BC0A /* Pods-PrivatePhotoAlbumUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivatePhotoAlbumUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrivatePhotoAlbumUITests/Pods-PrivatePhotoAlbumUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8147ED9C583225A6A74582D1 /* Pods_PrivatePhotoAlbumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrivatePhotoAlbumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		923B53481D12BCEA00AF17BE /* PrivatePhotoAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivatePhotoAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		923B534B1D12BCEA00AF17BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		923B534D1D12BCEA00AF17BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +59,10 @@
 		923B536D1D12BCEA00AF17BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionWindow.swift; sourceTree = "<group>"; };
 		B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionViewController.swift; sourceTree = "<group>"; };
+		C242B0B00C360E6E75A29235 /* Pods-PrivatePhotoAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivatePhotoAlbum.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrivatePhotoAlbum/Pods-PrivatePhotoAlbum.release.xcconfig"; sourceTree = "<group>"; };
+		C84DBDC4542B238BB062AE4A /* Pods-PrivatePhotoAlbumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivatePhotoAlbumTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrivatePhotoAlbumTests/Pods-PrivatePhotoAlbumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7B8403C3FE68DF70E65AFEF /* Pods_PrivatePhotoAlbum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrivatePhotoAlbum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFAB0F602758AF9F8C303174 /* Pods_PrivatePhotoAlbumUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrivatePhotoAlbumUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0BD2DBBDE592E38D92CA5ED /* Pods_PrivatePhotoAlbum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5196FAC1B45D8322562ED5D0 /* Pods_PrivatePhotoAlbumTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895B664B0AB7CD367E3103AD /* Pods_PrivatePhotoAlbumUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				923B535F1D12BCEA00AF17BE /* PrivatePhotoAlbumTests */,
 				923B536A1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests */,
 				923B53491D12BCEA00AF17BE /* Products */,
+				FC9BA412B73F7B984572311B /* Pods */,
+				DDC1B88FA5522A6E5A14AACB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +148,29 @@
 			path = PrivatePhotoAlbumUITests;
 			sourceTree = "<group>";
 		};
+		DDC1B88FA5522A6E5A14AACB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7B8403C3FE68DF70E65AFEF /* Pods_PrivatePhotoAlbum.framework */,
+				8147ED9C583225A6A74582D1 /* Pods_PrivatePhotoAlbumTests.framework */,
+				FFAB0F602758AF9F8C303174 /* Pods_PrivatePhotoAlbumUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC9BA412B73F7B984572311B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				335D3A894331B79F5C488FB9 /* Pods-PrivatePhotoAlbum.debug.xcconfig */,
+				C242B0B00C360E6E75A29235 /* Pods-PrivatePhotoAlbum.release.xcconfig */,
+				C84DBDC4542B238BB062AE4A /* Pods-PrivatePhotoAlbumTests.debug.xcconfig */,
+				045086D0BBF6F116A2FAA138 /* Pods-PrivatePhotoAlbumTests.release.xcconfig */,
+				505B4C746D0F8DEE9A62BC0A /* Pods-PrivatePhotoAlbumUITests.debug.xcconfig */,
+				01D2ECC85A5FDFC13A117438 /* Pods-PrivatePhotoAlbumUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 923B53701D12BCEA00AF17BE /* Build configuration list for PBXNativeTarget "PrivatePhotoAlbum" */;
 			buildPhases = (
+				A3D69EF2DF1D2EAE6145B587 /* [CP] Check Pods Manifest.lock */,
 				923B53441D12BCEA00AF17BE /* Sources */,
 				923B53451D12BCEA00AF17BE /* Frameworks */,
 				923B53461D12BCEA00AF17BE /* Resources */,
+				781619ED36CDBF0D6D2CB133 /* [CP] Embed Pods Frameworks */,
+				C70572BE49640C4857F3B14E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 923B53731D12BCEA00AF17BE /* Build configuration list for PBXNativeTarget "PrivatePhotoAlbumTests" */;
 			buildPhases = (
+				8221348A1442858F6C7104C4 /* [CP] Check Pods Manifest.lock */,
 				923B53581D12BCEA00AF17BE /* Sources */,
 				923B53591D12BCEA00AF17BE /* Frameworks */,
 				923B535A1D12BCEA00AF17BE /* Resources */,
+				CACB3546412ABD8DF033048C /* [CP] Embed Pods Frameworks */,
+				F54A5D4C746A7C62C3CE751D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 923B53761D12BCEA00AF17BE /* Build configuration list for PBXNativeTarget "PrivatePhotoAlbumUITests" */;
 			buildPhases = (
+				4440886A601FB3BEBF904B8A /* [CP] Check Pods Manifest.lock */,
 				923B53631D12BCEA00AF17BE /* Sources */,
 				923B53641D12BCEA00AF17BE /* Frameworks */,
 				923B53651D12BCEA00AF17BE /* Resources */,
+				00A391E37EA7918F06B3A601 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +304,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00A391E37EA7918F06B3A601 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrivatePhotoAlbumUITests/Pods-PrivatePhotoAlbumUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4440886A601FB3BEBF904B8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		781619ED36CDBF0D6D2CB133 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrivatePhotoAlbum/Pods-PrivatePhotoAlbum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8221348A1442858F6C7104C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D69EF2DF1D2EAE6145B587 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C70572BE49640C4857F3B14E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrivatePhotoAlbum/Pods-PrivatePhotoAlbum-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CACB3546412ABD8DF033048C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrivatePhotoAlbumTests/Pods-PrivatePhotoAlbumTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F54A5D4C746A7C62C3CE751D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PrivatePhotoAlbumTests/Pods-PrivatePhotoAlbumTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		923B53441D12BCEA00AF17BE /* Sources */ = {
@@ -405,6 +576,7 @@
 		};
 		923B53711D12BCEA00AF17BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 335D3A894331B79F5C488FB9 /* Pods-PrivatePhotoAlbum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PrivatePhotoAlbum/Info.plist;
@@ -416,6 +588,7 @@
 		};
 		923B53721D12BCEA00AF17BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C242B0B00C360E6E75A29235 /* Pods-PrivatePhotoAlbum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PrivatePhotoAlbum/Info.plist;
@@ -427,6 +600,7 @@
 		};
 		923B53741D12BCEA00AF17BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C84DBDC4542B238BB062AE4A /* Pods-PrivatePhotoAlbumTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PrivatePhotoAlbumTests/Info.plist;
@@ -439,6 +613,7 @@
 		};
 		923B53751D12BCEA00AF17BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 045086D0BBF6F116A2FAA138 /* Pods-PrivatePhotoAlbumTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PrivatePhotoAlbumTests/Info.plist;
@@ -451,6 +626,7 @@
 		};
 		923B53771D12BCEA00AF17BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 505B4C746D0F8DEE9A62BC0A /* Pods-PrivatePhotoAlbumUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PrivatePhotoAlbumUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -462,6 +638,7 @@
 		};
 		923B53781D12BCEA00AF17BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D2ECC85A5FDFC13A117438 /* Pods-PrivatePhotoAlbumUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PrivatePhotoAlbumUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

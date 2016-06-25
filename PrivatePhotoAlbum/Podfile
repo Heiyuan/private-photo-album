@@ -1,0 +1,23 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+
+target 'PrivatePhotoAlbum' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+	pod 'Masonry'
+	pod 'pop'
+	pod 'Shimmer'
+	pod 'IQKeyboardManager'
+  # Pods for PrivatePhotoAlbum
+
+  target 'PrivatePhotoAlbumTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PrivatePhotoAlbumUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
