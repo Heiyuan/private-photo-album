@@ -12,9 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let button = UIButton.init(type: UIButtonType.Custom)
+        button.backgroundColor = UIColor.redColor();
+        button.frame = CGRectMake(0, 0, 100, 100);
+        self.view.addSubview(button);
+        button .addTarget(self, action: #selector(show), forControlEvents: UIControlEvents.TouchUpInside);
     }
-
+    func show() -> Void {
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

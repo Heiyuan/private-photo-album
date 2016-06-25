@@ -14,6 +14,8 @@
 		923B53561D12BCEA00AF17BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923B53541D12BCEA00AF17BE /* LaunchScreen.storyboard */; };
 		923B53611D12BCEA00AF17BE /* PrivatePhotoAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B53601D12BCEA00AF17BE /* PrivatePhotoAlbumTests.swift */; };
 		923B536C1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B536B1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift */; };
+		B14C89871D1E5B58009BA3EB /* EncryptionWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */; };
+		B16B835F1D1E74B10016CF4B /* EncryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		923B53671D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivatePhotoAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		923B536B1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatePhotoAlbumUITests.swift; sourceTree = "<group>"; };
 		923B536D1D12BCEA00AF17BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionWindow.swift; sourceTree = "<group>"; };
+		B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				923B534B1D12BCEA00AF17BE /* AppDelegate.swift */,
 				923B534D1D12BCEA00AF17BE /* ViewController.swift */,
+				B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */,
+				B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */,
 				923B534F1D12BCEA00AF17BE /* Main.storyboard */,
 				923B53521D12BCEA00AF17BE /* Assets.xcassets */,
 				923B53541D12BCEA00AF17BE /* LaunchScreen.storyboard */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B14C89871D1E5B58009BA3EB /* EncryptionWindow.swift in Sources */,
 				923B534E1D12BCEA00AF17BE /* ViewController.swift in Sources */,
 				923B534C1D12BCEA00AF17BE /* AppDelegate.swift in Sources */,
+				B16B835F1D1E74B10016CF4B /* EncryptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +490,7 @@
 				923B53721D12BCEA00AF17BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		923B53731D12BCEA00AF17BE /* Build configuration list for PBXNativeTarget "PrivatePhotoAlbumTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +499,7 @@
 				923B53751D12BCEA00AF17BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		923B53761D12BCEA00AF17BE /* Build configuration list for PBXNativeTarget "PrivatePhotoAlbumUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +508,7 @@
 				923B53781D12BCEA00AF17BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
