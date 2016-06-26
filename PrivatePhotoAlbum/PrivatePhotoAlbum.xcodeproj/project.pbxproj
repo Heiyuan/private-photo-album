@@ -16,8 +16,6 @@
 		923B53561D12BCEA00AF17BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923B53541D12BCEA00AF17BE /* LaunchScreen.storyboard */; };
 		923B53611D12BCEA00AF17BE /* PrivatePhotoAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B53601D12BCEA00AF17BE /* PrivatePhotoAlbumTests.swift */; };
 		923B536C1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B536B1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift */; };
-		9250E67E1D1E8E7B00F4F030 /* FirstSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250E67C1D1E8E7B00F4F030 /* FirstSetViewController.swift */; };
-		9250E67F1D1E8E7B00F4F030 /* FirstSetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9250E67D1D1E8E7B00F4F030 /* FirstSetViewController.xib */; };
 		A0BD2DBBDE592E38D92CA5ED /* Pods_PrivatePhotoAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B8403C3FE68DF70E65AFEF /* Pods_PrivatePhotoAlbum.framework */; };
 		B14C89871D1E5B58009BA3EB /* EncryptionWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */; };
 		B16B835F1D1E74B10016CF4B /* EncryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */; };
@@ -59,8 +57,6 @@
 		923B53671D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivatePhotoAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		923B536B1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatePhotoAlbumUITests.swift; sourceTree = "<group>"; };
 		923B536D1D12BCEA00AF17BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9250E67C1D1E8E7B00F4F030 /* FirstSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSetViewController.swift; sourceTree = "<group>"; };
-		9250E67D1D1E8E7B00F4F030 /* FirstSetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstSetViewController.xib; sourceTree = "<group>"; };
 		B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionWindow.swift; sourceTree = "<group>"; };
 		B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionViewController.swift; sourceTree = "<group>"; };
 		C242B0B00C360E6E75A29235 /* Pods-PrivatePhotoAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivatePhotoAlbum.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrivatePhotoAlbum/Pods-PrivatePhotoAlbum.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,7 +122,6 @@
 				923B534D1D12BCEA00AF17BE /* ViewController.swift */,
 				B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */,
 				B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */,
-				9250E67B1D1E8E1500F4F030 /* FirstLoad */,
 				923B534F1D12BCEA00AF17BE /* Main.storyboard */,
 				923B53521D12BCEA00AF17BE /* Assets.xcassets */,
 				923B53541D12BCEA00AF17BE /* LaunchScreen.storyboard */,
@@ -153,13 +148,6 @@
 			path = PrivatePhotoAlbumUITests;
 			sourceTree = "<group>";
 		};
-		9250E67B1D1E8E1500F4F030 /* FirstLoad */ = {
-			isa = PBXGroup;
-			children = (
-				9250E67C1D1E8E7B00F4F030 /* FirstSetViewController.swift */,
-				9250E67D1D1E8E7B00F4F030 /* FirstSetViewController.xib */,
-			);
-			path = FirstLoad;
 		DDC1B88FA5522A6E5A14AACB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,7 +285,6 @@
 			files = (
 				923B53561D12BCEA00AF17BE /* LaunchScreen.storyboard in Resources */,
 				923B53531D12BCEA00AF17BE /* Assets.xcassets in Resources */,
-				9250E67F1D1E8E7B00F4F030 /* FirstSetViewController.xib in Resources */,
 				923B53511D12BCEA00AF17BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,7 +437,6 @@
 				923B534E1D12BCEA00AF17BE /* ViewController.swift in Sources */,
 				923B534C1D12BCEA00AF17BE /* AppDelegate.swift in Sources */,
 				B16B835F1D1E74B10016CF4B /* EncryptionViewController.swift in Sources */,
-				9250E67E1D1E8E7B00F4F030 /* FirstSetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,54 +8,38 @@
 
 import UIKit
 
-let BOUNDS : CGRect = UIScreen.mainScreen().bounds
-let kWIDTH : CGFloat = BOUNDS.size.width
-let kHEIGHT : CGFloat = BOUNDS.size.height
-let kSCALEX : CGFloat = kWIDTH / 375.0
-let kSCALEY : CGFloat = kHEIGHT / 667.0
-
-func CGBOUNDS(length:CGFloat) -> CGFloat {
-    return length * kSCALEX
-}
-
-func CGHBOUNDS(length:CGFloat) -> CGFloat {
-    return length * kSCALEY
-}
-
 class EncryptionViewController: UIViewController,UITextFieldDelegate {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        createSubViews()
-    }
-    
-    func createSubViews() {
-        let textfileld = UITextField(frame: CGRectMake(CGBOUNDS(80), 200, kWIDTH - CGBOUNDS(80) * 2, 30));
-        textfileld.borderStyle = UITextBorderStyle.RoundedRect
-        textfileld.returnKeyType = UIReturnKeyType.Go
-        textfileld.secureTextEntry = true
-        textfileld.becomeFirstResponder()
-        textfileld.delegate = self
+
+        let textfileld = UITextField(frame: CGRectMake(100, 100, 200, 60));
+        textfileld.backgroundColor = UIColor.blueColor();
         self.view.addSubview(textfileld)
+        textfileld.delegate = self
     }
-    
-    //MARK:UITextFieldDelegate
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        if textField.text == "111" {
-            textField.resignFirstResponder();
-            let tmpDelegate = UIApplication.sharedApplication().delegate
-            tmpDelegate?.window!!.makeKeyAndVisible()
-            return true
-        } else {
-            let alertController = UIAlertController(title: "提示", message: "密码错误", preferredStyle: UIAlertControllerStyle.Alert)
-            let action = UIAlertAction(title: "确定", style: UIAlertActionStyle.Destructive, handler: nil)
-            alertController.addAction(action)
-            self.presentViewController(alertController, animated: true, completion: nil)
-            return false
-        }
-    }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField.text == "111" {
+            let tmpDelegate = UIApplication.sharedApplication().delegate
+            tmpDelegate?.window!!.makeKeyAndVisible()
+        
+        }
+        return true
+    }
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
