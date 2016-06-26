@@ -7,14 +7,17 @@
 //
 
 import UIKit
-import Masonry
 class SetPasswordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let iconImageView:UIImageView = UIImageView(image: UIImage(named: "Icon"))
-        self.view .addSubview(iconImageView);
-        iconImageView 
+        iconImageView.translatesAutoresizingMaskIntoConstraints = false;
+        self.view.addSubview(iconImageView);
+        self.view.addConstraint(NSLayoutConstraint.init(item: iconImageView, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0))
+        self.view.addConstraint(NSLayoutConstraint.init(item: iconImageView, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.CenterY, multiplier: 0.3, constant: 0.0))
+    
+    
     }
 
     override func didReceiveMemoryWarning() {

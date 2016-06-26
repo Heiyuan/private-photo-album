@@ -1,21 +1,18 @@
 PODS:
   - IQKeyboardManager (4.0.4)
-  - Masonry (1.0.1)
   - pop (1.0.9)
   - Shimmer (1.0.2)
 
 DEPENDENCIES:
   - IQKeyboardManager
-  - Masonry
   - pop
   - Shimmer
 
 SPEC CHECKSUMS:
   IQKeyboardManager: 4a6f83b540283c2645aaeba2bd8dc0f09b5c77f8
-  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
 
-PODFILE CHECKSUM: de7c3047f5f9692de5cfd167870fc750f85e75be
+PODFILE CHECKSUM: d7c51ea4281a9bfc620a6c9be77889de13dafe1a
 
 COCOAPODS: 1.0.1

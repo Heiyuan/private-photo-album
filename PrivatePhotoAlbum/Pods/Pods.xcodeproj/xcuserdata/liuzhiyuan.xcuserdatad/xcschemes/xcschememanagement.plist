@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Masonry.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-PrivatePhotoAlbum.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,7 +42,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1F5235D81D70F6AC6F7E8400BF6416CE</key>
+		<key>24C5CE284BA44FE28DBF7AD3DD25C383</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,7 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>513C056FA9500D0512AF77FB328C9458</key>
+		<key>4E7DE480875BCD139FDC214F6590B43B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,12 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A9A83F63385AA43314397B8DD375464B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F71A58FF03416FAB4A77A8E91643D929</key>
+		<key>CA23D187E048D82A1087DCBFBC6F7DB7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
