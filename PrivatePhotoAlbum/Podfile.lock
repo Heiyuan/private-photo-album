@@ -1,21 +1,21 @@
 PODS:
   - IQKeyboardManager (4.0.4)
+  - Masonry (1.0.1)
   - pop (1.0.9)
   - Shimmer (1.0.2)
-  - Snap (0.9.2)
 
 DEPENDENCIES:
   - IQKeyboardManager
+  - Masonry
   - pop
   - Shimmer
-  - Snap
 
 SPEC CHECKSUMS:
   IQKeyboardManager: 4a6f83b540283c2645aaeba2bd8dc0f09b5c77f8
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
-  Snap: 7318f07bc3d43adb0706f36ede18fa18d2347037
 
-PODFILE CHECKSUM: 841febf8481ff3910dc00ea4d5aa83c6b8a4c347
+PODFILE CHECKSUM: de7c3047f5f9692de5cfd167870fc750f85e75be
 
 COCOAPODS: 1.0.1
