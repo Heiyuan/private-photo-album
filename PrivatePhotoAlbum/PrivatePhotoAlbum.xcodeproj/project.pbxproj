@@ -16,6 +16,7 @@
 		923B53561D12BCEA00AF17BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923B53541D12BCEA00AF17BE /* LaunchScreen.storyboard */; };
 		923B53611D12BCEA00AF17BE /* PrivatePhotoAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B53601D12BCEA00AF17BE /* PrivatePhotoAlbumTests.swift */; };
 		923B536C1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B536B1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift */; };
+		92921DB71D1FD4820042B824 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92921DB61D1FD4820042B824 /* Constant.swift */; };
 		A0BD2DBBDE592E38D92CA5ED /* Pods_PrivatePhotoAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B8403C3FE68DF70E65AFEF /* Pods_PrivatePhotoAlbum.framework */; };
 		B14C89871D1E5B58009BA3EB /* EncryptionWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */; };
 		B16B835F1D1E74B10016CF4B /* EncryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */; };
@@ -58,6 +59,7 @@
 		923B536B1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatePhotoAlbumUITests.swift; sourceTree = "<group>"; };
 		923B536D1D12BCEA00AF17BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92921DB51D1FB4DC0042B824 /* PrivatePhotoAlbum-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PrivatePhotoAlbum-Bridging-Header.h"; sourceTree = "<group>"; };
+		92921DB61D1FD4820042B824 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionWindow.swift; sourceTree = "<group>"; };
 		B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionViewController.swift; sourceTree = "<group>"; };
 		C242B0B00C360E6E75A29235 /* Pods-PrivatePhotoAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivatePhotoAlbum.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrivatePhotoAlbum/Pods-PrivatePhotoAlbum.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				923B534D1D12BCEA00AF17BE /* ViewController.swift */,
 				B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */,
 				B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */,
+				92921DB61D1FD4820042B824 /* Constant.swift */,
 				923B534F1D12BCEA00AF17BE /* Main.storyboard */,
 				923B53521D12BCEA00AF17BE /* Assets.xcassets */,
 				923B53541D12BCEA00AF17BE /* LaunchScreen.storyboard */,
@@ -437,6 +440,7 @@
 			files = (
 				B14C89871D1E5B58009BA3EB /* EncryptionWindow.swift in Sources */,
 				923B534E1D12BCEA00AF17BE /* ViewController.swift in Sources */,
+				92921DB71D1FD4820042B824 /* Constant.swift in Sources */,
 				923B534C1D12BCEA00AF17BE /* AppDelegate.swift in Sources */,
 				B16B835F1D1E74B10016CF4B /* EncryptionViewController.swift in Sources */,
 			);
