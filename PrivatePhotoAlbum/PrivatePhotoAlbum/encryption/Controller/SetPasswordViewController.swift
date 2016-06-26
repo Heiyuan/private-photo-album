@@ -14,7 +14,13 @@ class SetPasswordViewController: UIViewController {
         super.viewDidLoad()
         let iconImageView:UIImageView = UIImageView(image: UIImage(named: "Icon"))
         self.view .addSubview(iconImageView);
-        iconImageView 
+        let  View = self.view
+        
+        iconImageView.mas_makeConstraints { (make:MASConstraintMaker!) in
+            print(self.view)
+            
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
