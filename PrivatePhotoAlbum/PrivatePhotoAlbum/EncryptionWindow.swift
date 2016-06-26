@@ -13,7 +13,7 @@ class EncryptionWindow: UIWindow {
     static let sharedMySingleton = EncryptionWindow(frame:(UIScreen.mainScreen().bounds))
     override init(frame: CGRect) {
         super.init(frame: frame);
-        self.backgroundColor = UIColor.yellowColor();
+        self.backgroundColor = UIColor.init(white: 0.95, alpha: 1.0);
     }
     
     required init?(coder aDecoder: NSCoder) {
