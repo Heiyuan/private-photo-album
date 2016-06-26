@@ -18,6 +18,8 @@
 		923B536C1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B536B1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift */; };
 		92921DB71D1FD4820042B824 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92921DB61D1FD4820042B824 /* Constant.swift */; };
 		A0BD2DBBDE592E38D92CA5ED /* Pods_PrivatePhotoAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B8403C3FE68DF70E65AFEF /* Pods_PrivatePhotoAlbum.framework */; };
+		B13E4C861D1FC60700B9139C /* SetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13E4C851D1FC60700B9139C /* SetPasswordViewController.swift */; };
+		B13E4C881D1FC61E00B9139C /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13E4C871D1FC61E00B9139C /* Icon-60@3x.png */; };
 		B14C89871D1E5B58009BA3EB /* EncryptionWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */; };
 		B16B835F1D1E74B10016CF4B /* EncryptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,8 @@
 		923B53671D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivatePhotoAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		923B536B1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatePhotoAlbumUITests.swift; sourceTree = "<group>"; };
 		923B536D1D12BCEA00AF17BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B13E4C851D1FC60700B9139C /* SetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordViewController.swift; sourceTree = "<group>"; };
+		B13E4C871D1FC61E00B9139C /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@3x.png"; path = "Assets.xcassets/AppIcon.appiconset/Icon-60@3x.png"; sourceTree = "<group>"; };
 		92921DB51D1FB4DC0042B824 /* PrivatePhotoAlbum-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PrivatePhotoAlbum-Bridging-Header.h"; sourceTree = "<group>"; };
 		92921DB61D1FD4820042B824 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionWindow.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */,
 				B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */,
 				92921DB61D1FD4820042B824 /* Constant.swift */,
+				B13E4C871D1FC61E00B9139C /* Icon-60@3x.png */,
+				B13E4C831D1FC5D300B9139C /* encryption */,
 				923B534F1D12BCEA00AF17BE /* Main.storyboard */,
 				923B53521D12BCEA00AF17BE /* Assets.xcassets */,
 				923B53541D12BCEA00AF17BE /* LaunchScreen.storyboard */,
@@ -151,6 +157,22 @@
 				923B536D1D12BCEA00AF17BE /* Info.plist */,
 			);
 			path = PrivatePhotoAlbumUITests;
+			sourceTree = "<group>";
+		};
+		B13E4C831D1FC5D300B9139C /* encryption */ = {
+			isa = PBXGroup;
+			children = (
+				B13E4C841D1FC5E100B9139C /* Controller */,
+			);
+			path = encryption;
+			sourceTree = "<group>";
+		};
+		B13E4C841D1FC5E100B9139C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B13E4C851D1FC60700B9139C /* SetPasswordViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		DDC1B88FA5522A6E5A14AACB /* Frameworks */ = {
@@ -288,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13E4C881D1FC61E00B9139C /* Icon-60@3x.png in Resources */,
 				923B53561D12BCEA00AF17BE /* LaunchScreen.storyboard in Resources */,
 				923B53531D12BCEA00AF17BE /* Assets.xcassets in Resources */,
 				923B53511D12BCEA00AF17BE /* Main.storyboard in Resources */,
@@ -443,6 +466,7 @@
 				92921DB71D1FD4820042B824 /* Constant.swift in Sources */,
 				923B534C1D12BCEA00AF17BE /* AppDelegate.swift in Sources */,
 				B16B835F1D1E74B10016CF4B /* EncryptionViewController.swift in Sources */,
+				B13E4C861D1FC60700B9139C /* SetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
