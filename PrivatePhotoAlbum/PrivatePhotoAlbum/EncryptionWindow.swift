@@ -22,7 +22,7 @@ class EncryptionWindow: UIWindow {
     internal func show() -> Void {
         self.makeKeyAndVisible()
         self.hidden = false;
-        self.rootViewController = SetPasswordViewController()
+        self.rootViewController = EncryptionViewController()
     }
     func showHidd() -> Void {
         

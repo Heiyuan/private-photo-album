@@ -60,10 +60,10 @@
 		923B53671D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivatePhotoAlbumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		923B536B1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivatePhotoAlbumUITests.swift; sourceTree = "<group>"; };
 		923B536D1D12BCEA00AF17BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B13E4C851D1FC60700B9139C /* SetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordViewController.swift; sourceTree = "<group>"; };
-		B13E4C871D1FC61E00B9139C /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@3x.png"; path = "Assets.xcassets/AppIcon.appiconset/Icon-60@3x.png"; sourceTree = "<group>"; };
 		92921DB51D1FB4DC0042B824 /* PrivatePhotoAlbum-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PrivatePhotoAlbum-Bridging-Header.h"; sourceTree = "<group>"; };
 		92921DB61D1FD4820042B824 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		B13E4C851D1FC60700B9139C /* SetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordViewController.swift; sourceTree = "<group>"; };
+		B13E4C871D1FC61E00B9139C /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@3x.png"; path = "Assets.xcassets/AppIcon.appiconset/Icon-60@3x.png"; sourceTree = "<group>"; };
 		B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionWindow.swift; sourceTree = "<group>"; };
 		B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionViewController.swift; sourceTree = "<group>"; };
 		C242B0B00C360E6E75A29235 /* Pods-PrivatePhotoAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrivatePhotoAlbum.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrivatePhotoAlbum/Pods-PrivatePhotoAlbum.release.xcconfig"; sourceTree = "<group>"; };
@@ -611,6 +611,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PrivatePhotoAlbum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TokyoHot.PrivatePhotoAlbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -626,6 +627,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PrivatePhotoAlbum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TokyoHot.PrivatePhotoAlbum;
 				PRODUCT_NAME = "$(TARGET_NAME)";

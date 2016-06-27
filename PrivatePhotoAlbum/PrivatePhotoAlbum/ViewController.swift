@@ -18,8 +18,10 @@ class ViewController: UIViewController {
         self.view.addSubview(button);
         button .addTarget(self, action: #selector(show), forControlEvents: UIControlEvents.TouchUpInside);
     }
+
     func show() -> Void {
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
