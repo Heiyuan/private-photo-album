@@ -17,6 +17,7 @@
 		923B53611D12BCEA00AF17BE /* PrivatePhotoAlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B53601D12BCEA00AF17BE /* PrivatePhotoAlbumTests.swift */; };
 		923B536C1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923B536B1D12BCEA00AF17BE /* PrivatePhotoAlbumUITests.swift */; };
 		92921DB71D1FD4820042B824 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92921DB61D1FD4820042B824 /* Constant.swift */; };
+		92D3A2BC1D22217800A7FFCD /* YCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3A2BB1D22217800A7FFCD /* YCTextField.swift */; };
 		A0BD2DBBDE592E38D92CA5ED /* Pods_PrivatePhotoAlbum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B8403C3FE68DF70E65AFEF /* Pods_PrivatePhotoAlbum.framework */; };
 		B13E4C861D1FC60700B9139C /* SetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13E4C851D1FC60700B9139C /* SetPasswordViewController.swift */; };
 		B13E4C881D1FC61E00B9139C /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B13E4C871D1FC61E00B9139C /* Icon-60@3x.png */; };
@@ -62,6 +63,7 @@
 		923B536D1D12BCEA00AF17BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92921DB51D1FB4DC0042B824 /* PrivatePhotoAlbum-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PrivatePhotoAlbum-Bridging-Header.h"; sourceTree = "<group>"; };
 		92921DB61D1FD4820042B824 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		92D3A2BB1D22217800A7FFCD /* YCTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCTextField.swift; sourceTree = "<group>"; };
 		B13E4C851D1FC60700B9139C /* SetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPasswordViewController.swift; sourceTree = "<group>"; };
 		B13E4C871D1FC61E00B9139C /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@3x.png"; path = "Assets.xcassets/AppIcon.appiconset/Icon-60@3x.png"; sourceTree = "<group>"; };
 		B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptionWindow.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				B14C89861D1E5B58009BA3EB /* EncryptionWindow.swift */,
 				B16B835D1D1E74B10016CF4B /* EncryptionViewController.swift */,
 				92921DB61D1FD4820042B824 /* Constant.swift */,
+				92D3A2BB1D22217800A7FFCD /* YCTextField.swift */,
 				B13E4C871D1FC61E00B9139C /* Icon-60@3x.png */,
 				B13E4C831D1FC5D300B9139C /* encryption */,
 				923B534F1D12BCEA00AF17BE /* Main.storyboard */,
@@ -461,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D3A2BC1D22217800A7FFCD /* YCTextField.swift in Sources */,
 				B14C89871D1E5B58009BA3EB /* EncryptionWindow.swift in Sources */,
 				923B534E1D12BCEA00AF17BE /* ViewController.swift in Sources */,
 				92921DB71D1FD4820042B824 /* Constant.swift in Sources */,

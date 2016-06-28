@@ -25,6 +25,7 @@ class EncryptionWindow: UIWindow {
         fatalError("init(coder:) has not been implemented")
     }
     internal func show() -> Void {
+        self.alpha = 1
         self.makeKeyAndVisible()
         self.hidden = false;
         self.rootViewController = EncryptionViewController()

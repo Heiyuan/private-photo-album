@@ -13,7 +13,7 @@ import IQKeyboardManager
 class EncryptionViewController: UIViewController, UITextFieldDelegate {
     private let iconImageView = UIImageView() /**<App图标*/
     private var placeHolderLabel = UILabel() /**<浮动Label*/
-    private var textfileld = UITextField() /**<密码输入框*/
+    private var textfileld: YCTextField? /**<密码输入框*/
     private var animationStoped: Bool = true /**<记录抖动动画是否结束*/
     private var textDidEdit: Bool = true /**<判断输入框内容是否从nil开始编辑*/
     
@@ -29,35 +29,26 @@ class EncryptionViewController: UIViewController, UITextFieldDelegate {
      创建子视图
      */
     private func createSubViews() {
-
+        
         iconImageView.image = UIImage(named: "Icon-60@3x")
         iconImageView.frame = CGRectMake((kWIDTH - CGBOUNDS(90)) / 2, CGBOUNDS(150) - 20, CGBOUNDS(90), CGBOUNDS(90))
         self.view.addSubview(iconImageView)
         
-        placeHolderLabel.frame = CGRectMake(CGBOUNDS(60) + 8, CGBOUNDS(260) - 20, 200, 30)
-        placeHolderLabel.textColor = UIColor(red: 38 / 255.0, green: 107 / 255.0, blue: 243 / 255.0, alpha: 1.0)
-        placeHolderLabel.font = UIFont.boldSystemFontOfSize(12)
-        placeHolderLabel.text = "Password"
-        placeHolderLabel.alpha = 0
-        self.view.addSubview(placeHolderLabel)
-        
-        textfileld = UITextField(frame: CGRectMake(CGBOUNDS(60), CGHBOUNDS(260), kWIDTH - CGBOUNDS(60) * 2, 30));
-        textfileld.addTarget(self, action: #selector(textDidChange), forControlEvents: UIControlEvents.EditingChanged)
-        textfileld.keyboardAppearance = UIKeyboardAppearance.Default
-        textfileld.borderStyle = UITextBorderStyle.RoundedRect
-        textfileld.returnKeyType = UIReturnKeyType.Go
-        textfileld.placeholder = "Password"
-        textfileld.secureTextEntry = true
-        textfileld.becomeFirstResponder()
-        textfileld.delegate = self
-        self.view.addSubview(textfileld)
+        textfileld = YCTextField(frame: CGRectMake(CGBOUNDS(60), CGHBOUNDS(260), kWIDTH - CGBOUNDS(60) * 2, 30));
+        textfileld!.borderStyle = UITextBorderStyle.RoundedRect
+        textfileld!.returnKeyType = UIReturnKeyType.Go
+        textfileld!.placeholder = "Password"
+        textfileld!.secureTextEntry = true
+        textfileld!.becomeFirstResponder()
+        textfileld!.delegate = self
+        self.view.addSubview(textfileld!)
     }
    
     /**
      密码输入正确，隐藏window视图
      */
     @objc private func hideForCorrect() {
-        textfileld.resignFirstResponder()
+        textfileld!.resignFirstResponder()
         let window =  self.view.window as! EncryptionWindow
         window.showHidd()
     }
@@ -67,58 +58,15 @@ class EncryptionViewController: UIViewController, UITextFieldDelegate {
      */
     private func shakeForError() {
         self.animationStoped = false
-        self.textfileld.text = nil
-        textDidClear()
+        self.textfileld!.text = nil
+        textfileld!.textDidClear()
         let animation = POPSpringAnimation(propertyNamed: kPOPLayerPositionX)
         animation.springBounciness = 12
         animation.velocity = 2000
         animation.completionBlock = {(_: POPAnimation!, finish: Bool!) in
             self.animationStoped = true
         }
-        self.textfileld.pop_addAnimation(animation, forKey: nil)
-    }
-    
-    /**
-     文本从空开始编辑时调用（做Label渐显上升动画）
-     */
-    private func textBeginEditFromNil() {
-        let alphaAnimation  = POPBasicAnimation(propertyNamed: kPOPViewAlpha)
-        alphaAnimation.duration = 0.4
-        alphaAnimation.toValue = 1
-        placeHolderLabel.pop_addAnimation(alphaAnimation, forKey: nil)
-        
-        let frameAnimation = POPBasicAnimation(propertyNamed: kPOPViewFrame)
-        frameAnimation.duration = 0.4
-        frameAnimation.toValue = NSValue(CGRect: CGRectMake(CGBOUNDS(60) + 8, CGBOUNDS(260) - 30, 200, 30))
-        placeHolderLabel.pop_addAnimation(frameAnimation, forKey: nil)
-    }
-    
-    /**
-     文本清空时调用
-     */
-    private func textDidClear() {
-        self.textDidEdit = true
-        let alphaAnimation  = POPBasicAnimation(propertyNamed: kPOPViewAlpha)
-        alphaAnimation.duration = 0.4
-        alphaAnimation.toValue = 0
-        alphaAnimation.completionBlock = {(animation: POPAnimation!, finish: Bool!) in
-            self.placeHolderLabel.frame = CGRectMake(CGBOUNDS(60) + 8, CGBOUNDS(260) - 20, 200, 30)
-        }
-        placeHolderLabel.pop_addAnimation(alphaAnimation, forKey: nil)
-    }
-    
-    /**
-     输入框内容变化时调用
-     */
-    @objc private func textDidChange() {
-        let textString: NSString = NSString(string: textfileld.text!)
-        if textString.length == 1 && self.textDidEdit{
-            textBeginEditFromNil()
-        } else if textString.length == 0 {
-            textDidClear()
-        } else {
-            self.textDidEdit = false
-        }
+        self.textfileld!.pop_addAnimation(animation, forKey: nil)
     }
     
     //MARK: UITextFieldDelegate
