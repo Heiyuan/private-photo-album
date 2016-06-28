@@ -18,7 +18,7 @@ class SetPasswordViewController: UIViewController {
         self.view.addConstraint(NSLayoutConstraint.init(item: iconImageView, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0))
         self.view.addConstraint(NSLayoutConstraint.init(item: iconImageView, attribute: NSLayoutAttribute.CenterY, relatedBy: NSLayoutRelation.Equal, toItem: self.view, attribute: NSLayoutAttribute.CenterY, multiplier: 0.3, constant: 0.0))
         self.view.addConstraint(NSLayoutConstraint.init(item: iconImageView, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 130));
-       
+       self.view.addConstraint(NSLayoutConstraint.init(item: iconImageView, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: iconImageView, attribute: NSLayoutAttribute.Height, multiplier: 1.0, constant: 0));
     
     
     }

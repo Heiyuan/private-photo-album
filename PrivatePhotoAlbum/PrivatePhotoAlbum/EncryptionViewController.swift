@@ -11,8 +11,6 @@ import pop
 import IQKeyboardManager
 
 class EncryptionViewController: UIViewController, UITextFieldDelegate {
-    private var maskView: UIView? /**<底层视图，用来做动画*/
-    private let effectView = UIVisualEffectView(frame: BOUNDS) /**<毛玻璃*/
     private let iconImageView = UIImageView() /**<App图标*/
     private var placeHolderLabel = UILabel() /**<浮动Label*/
     private var textfileld = UITextField() /**<密码输入框*/
@@ -31,23 +29,17 @@ class EncryptionViewController: UIViewController, UITextFieldDelegate {
      创建子视图
      */
     private func createSubViews() {
-        maskView = ViewController().view
-        self.view.addSubview(maskView!)
-        
-        let visualEffect = UIBlurEffect(style: UIBlurEffectStyle.ExtraLight)
-        effectView.effect = visualEffect
-        self.view.addSubview(effectView)
-        
+
         iconImageView.image = UIImage(named: "Icon-60@3x")
         iconImageView.frame = CGRectMake((kWIDTH - CGBOUNDS(90)) / 2, CGBOUNDS(150) - 20, CGBOUNDS(90), CGBOUNDS(90))
-        effectView.addSubview(iconImageView)
+        self.view.addSubview(iconImageView)
         
         placeHolderLabel.frame = CGRectMake(CGBOUNDS(60) + 8, CGBOUNDS(260) - 20, 200, 30)
         placeHolderLabel.textColor = UIColor(red: 38 / 255.0, green: 107 / 255.0, blue: 243 / 255.0, alpha: 1.0)
         placeHolderLabel.font = UIFont.boldSystemFontOfSize(12)
         placeHolderLabel.text = "Password"
         placeHolderLabel.alpha = 0
-        effectView.addSubview(placeHolderLabel)
+        self.view.addSubview(placeHolderLabel)
         
         textfileld = UITextField(frame: CGRectMake(CGBOUNDS(60), CGHBOUNDS(260), kWIDTH - CGBOUNDS(60) * 2, 30));
         textfileld.addTarget(self, action: #selector(textDidChange), forControlEvents: UIControlEvents.EditingChanged)
@@ -58,7 +50,7 @@ class EncryptionViewController: UIViewController, UITextFieldDelegate {
         textfileld.secureTextEntry = true
         textfileld.becomeFirstResponder()
         textfileld.delegate = self
-        effectView.addSubview(textfileld)
+        self.view.addSubview(textfileld)
     }
    
     /**
@@ -66,14 +58,8 @@ class EncryptionViewController: UIViewController, UITextFieldDelegate {
      */
     @objc private func hideForCorrect() {
         textfileld.resignFirstResponder()
-        let whiteViewAlphaAnimation = POPBasicAnimation(propertyNamed: kPOPViewAlpha)
-        whiteViewAlphaAnimation.duration = 0.6
-        whiteViewAlphaAnimation.toValue = 0
-        whiteViewAlphaAnimation.completionBlock = {(_: POPAnimation!, finish: Bool!) in
-            let tmpDelegate = UIApplication.sharedApplication().delegate
-            tmpDelegate?.window!!.makeKeyAndVisible()
-        }
-        effectView.pop_addAnimation(whiteViewAlphaAnimation, forKey: nil)
+        let window =  self.view.window as! EncryptionWindow
+        window.showHidd()
     }
     
     /**
