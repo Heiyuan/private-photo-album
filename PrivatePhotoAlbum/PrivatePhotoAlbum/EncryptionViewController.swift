@@ -39,7 +39,6 @@ class EncryptionViewController: UIViewController, UITextFieldDelegate {
         textfileld!.returnKeyType = UIReturnKeyType.Go
         textfileld!.placeholder = "Password"
         textfileld!.secureTextEntry = true
-        textfileld!.becomeFirstResponder()
         textfileld!.delegate = self
         self.view.addSubview(textfileld!)
     }
@@ -69,6 +68,12 @@ class EncryptionViewController: UIViewController, UITextFieldDelegate {
         self.textfileld!.pop_addAnimation(animation, forKey: nil)
     }
     
+    //MARK: 输入框成为第一响应者
+    
+    func textFieldBecomeFirstResponder() {
+        textfileld!.becomeFirstResponder()
+    }
+    
     //MARK: UITextFieldDelegate
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         if textField.text == "111" {
@@ -81,6 +86,10 @@ class EncryptionViewController: UIViewController, UITextFieldDelegate {
             }
             return false
         }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
     }
     
     //MARK: 重写允许横屏方法

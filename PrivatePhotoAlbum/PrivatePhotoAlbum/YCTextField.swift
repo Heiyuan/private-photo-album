@@ -143,7 +143,7 @@ class YCTextField: UITextField {
     func textDidClear() {
         self.textDidEdit = true
         let alphaAnimation  = POPBasicAnimation(propertyNamed: kPOPViewAlpha)
-        alphaAnimation.duration = 0.4
+        alphaAnimation.duration = 0.3
         alphaAnimation.toValue = 0
         alphaAnimation.completionBlock = {(animation: POPAnimation!, finish: Bool!) in
             self.floatLabel.frame = self.floatLabelOriginFrame!

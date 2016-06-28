@@ -12,31 +12,34 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var didFinshLuanch: Bool = false
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
         return true
     }
 
     func applicationWillResignActive(application: UIApplication) {
-        EncryptionWindow.sharedMySingleton.show()
-    }
-
-    func applicationDidEnterBackground(application: UIApplication) {
         
     }
 
+    func applicationDidEnterBackground(application: UIApplication) {
+        EncryptionWindow.sharedMySingleton.show()
+    }
+
     func applicationWillEnterForeground(application: UIApplication) {
-    
+        (EncryptionWindow.sharedMySingleton.rootViewController as! EncryptionViewController).textFieldBecomeFirstResponder()
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
-        EncryptionWindow.sharedMySingleton.show()
+        if !didFinshLuanch {
+            EncryptionWindow.sharedMySingleton.show()
+            didFinshLuanch = true
+            (EncryptionWindow.sharedMySingleton.rootViewController as! EncryptionViewController).textFieldBecomeFirstResponder()
+        }
     }
 
     func applicationWillTerminate(application: UIApplication) {
-        EncryptionWindow.sharedMySingleton.show()
+        
     }
 
 
