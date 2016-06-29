@@ -29,12 +29,12 @@ class EncryptionViewController: UIViewController, UITextFieldDelegate {
      创建子视图
      */
     private func createSubViews() {
-        
         iconImageView.image = UIImage(named: "Icon-60@3x")
         iconImageView.frame = CGRectMake((kWIDTH - CGBOUNDS(90)) / 2, CGBOUNDS(150) - 20, CGBOUNDS(90), CGBOUNDS(90))
         self.view.addSubview(iconImageView)
         
         textfileld = YCTextField(frame: CGRectMake(CGBOUNDS(60), CGHBOUNDS(260), kWIDTH - CGBOUNDS(60) * 2, 30));
+        textfileld!.clearButtonMode = UITextFieldViewMode.WhileEditing
         textfileld!.borderStyle = UITextBorderStyle.RoundedRect
         textfileld!.returnKeyType = UIReturnKeyType.Go
         textfileld!.placeholder = "Password"
@@ -69,7 +69,6 @@ class EncryptionViewController: UIViewController, UITextFieldDelegate {
     }
     
     //MARK: 输入框成为第一响应者
-    
     func textFieldBecomeFirstResponder() {
         textfileld!.becomeFirstResponder()
     }
@@ -86,10 +85,6 @@ class EncryptionViewController: UIViewController, UITextFieldDelegate {
             }
             return false
         }
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        
     }
     
     //MARK: 重写允许横屏方法
